@@ -1,0 +1,81 @@
+
+header
+	+clearfix
+	min-height: 400px
+	position: relative
+	
+	&:after
+		content: ""
+		display: block
+		width: 100%
+		height: 45px
+		+gradient(90deg,$verde,$azul)
+		position: absolute
+		bottom: 0
+
+	background:
+		image: url('../images/images2/slide-de-fundo-da-home.jpg')
+		position: top center
+		repeat: no-repeat
+		color: $preto  
+		attachment: fixed
+		size: cover
+	
+	.logo
+		float: left
+		margin-top: 30px
+		img
+			width: 70px
+			hight: 35px
+
+	.links
+		margin-top: 35px  
+
+	.links
+		float: right
+		nav,
+		.social
+			display: inline-block
+		
+		nav
+			+breakpoint($tablet)
+				display: none
+			+breakpoint($celular)
+				display: none
+			ul
+				li
+					display: inline-block
+					margin: 0 13px 0 0
+					a
+						color: $branco
+						text-transform uppercase
+		.social
+			li
+				display: inline-block
+				margin: 0 10px 0 0
+				a
+					color: $branco
+					display: block
+					border: 1px solid
+					padding: 4px
+					width: 25px
+					height: 25px
+					line-height: 12px
+					text-align: center
+					+border-radius(120px)
+	
+	h1
+		clear: both
+		margin: 109px auto 1.20cm auto
+		font-weight: $light
+		display: table
+		border: 3px solid $branco
+		padding: 20px
+		+breakpoint($celular)
+			+font-size(30px)
+
+	h1,
+	p
+		color: $branco
+		text-align: center
+		text-transform: uppercase
