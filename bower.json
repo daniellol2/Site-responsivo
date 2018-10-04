@@ -1,0 +1,26 @@
+{
+  "name": "HTML",
+  "homepage": "https://github.com/daniellol2/Site-responsivo",
+  "authors": [
+    "Daniel Oliveira <danibamba2008@hotmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "font-awesome": "^5.3.1",
+    "breakpoint-sass": "^2.7.1",
+    "bootstrap-sass": "^3.3.7"
+  },
+  "devDependencies": {
+    "breakpoint-sass": "^2.7.1",
+    "font-awesome": "^5.3.1"
+  }
+}
