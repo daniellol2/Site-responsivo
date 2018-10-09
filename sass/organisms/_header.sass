@@ -1,7 +1,5 @@
-
 header
 	+clearfix
-	min-height: 400px
 	position: relative
 	
 	&:after
@@ -24,6 +22,7 @@ header
 	.logo
 		float: left
 		margin-top: 30px
+
 		img
 			width: 70px
 			hight: 35px
@@ -33,10 +32,16 @@ header
 
 	.links
 		float: right
+
 		nav,
 		.social
 			display: inline-block
-		
+
+		nav,
+		.social
+			display: inline-block
+			text-transform: uppercase
+	
 		nav
 			+breakpoint($tablet)
 				display: none
@@ -49,6 +54,7 @@ header
 					a
 						color: $branco
 						text-transform uppercase
+
 		.social
 			li
 				display: inline-block
