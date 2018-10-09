@@ -1,7 +1,5 @@
-
 header
 	+clearfix
-	min-height: 400px
 	position: relative
 	
 	&:after
@@ -12,18 +10,11 @@ header
 		+gradient(90deg,$verde,$azul)
 		position: absolute
 		bottom: 0
-
-	background:
-		image: url('../images/images2/slide-de-fundo-da-home.jpg')
-		position: top center
-		repeat: no-repeat
-		color: $preto  
-		attachment: fixed
-		size: cover
 	
 	.logo
 		float: left
 		margin-top: 30px
+		
 		img
 			width: 70px
 			hight: 35px
@@ -33,9 +24,11 @@ header
 
 	.links
 		float: right
+		
 		nav,
 		.social
 			display: inline-block
+			text-transform: uppercase
 		
 		nav
 			+breakpoint($tablet)
@@ -48,7 +41,6 @@ header
 					margin: 0 13px 0 0
 					a
 						color: $branco
-						text-transform uppercase
 		.social
 			li
 				display: inline-block
