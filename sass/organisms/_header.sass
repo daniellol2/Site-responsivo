@@ -1,6 +1,7 @@
 header
 	+clearfix
 	position: relative
+	margin-bottom: 2.70cm
 	
 	&:after
 		content: ""
@@ -10,14 +11,6 @@ header
 		+gradient(90deg,$verde,$azul)
 		position: absolute
 		bottom: 0
-
-	background:
-		image: url('../images/images2/slide-de-fundo-da-home.jpg')
-		position: top center
-		repeat: no-repeat
-		color: $preto  
-		attachment: fixed
-		size: cover
 	
 	.logo
 		float: left
@@ -79,6 +72,7 @@ header
 		padding: 20px
 		+breakpoint($celular)
 			+font-size(30px)
+		text-transform: uppercase
 
 	h1,
 	p
